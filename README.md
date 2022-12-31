@@ -25,3 +25,10 @@ https://planefinder.net/account/receivers
 
 ## Opensky Network
 https://opensky-network.org/my-opensky
+
+# Notes
+The provider of the image (FR24, ADSBX, etc.) includes a dump1090 utility of some kind. This utility uses the SDR receiver to decode the ADS-B messages and also provides several service ports for other feeds to see what that dump1090 found.
+
+https://github.com/antirez/dump1090
+
+Other feeds include a .DEB package that will read port 3000[123] to get that data and send it back to their service. These .DEBs are pretty smart and will figure out what's going on without too much effort on your part.
