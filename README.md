@@ -14,15 +14,18 @@ ADSBX Image
 # Feeds
 ## FlightRadar24
 https://www.flightradar24.com/share-statistics
+### Notes
+* To upgrade or replace a feeder, you'll need the sharing key, which is found [here](https://www.flightradar24.com/account/data-sharing).
 ## FlightAware
 https://flightaware.com/adsb/stats/user/jaconaway1
-## ADSB Exchange
-https://www.adsbexchange.com/myip/
+### Notes
+* FA installs an APT repo to install the feeder.
+~~## ADSB Exchange
+https://www.adsbexchange.com/myip/~~
 ## Planefinder
 https://planefinder.net/account/receivers
-
+### Notes
 * Sharecode can be found in /etc/pfclient-config.json
-
 ## Opensky Network
 https://opensky-network.org/my-opensky
 
@@ -31,4 +34,4 @@ The provider of the image (FR24, ADSBX, etc.) includes a dump1090 utility of som
 
 https://github.com/antirez/dump1090
 
-Other feeds include a .DEB package that will read port 3000[123] to get that data and send it back to their service. These .DEBs are pretty smart and will figure out what's going on without too much effort on your part.
+Other feeds include a .DEB package that will read ports 3000[123] to get that data and send it back to their service. These .DEBs are pretty smart and will figure out what's going on without too much effort on your part.
