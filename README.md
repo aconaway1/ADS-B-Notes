@@ -36,3 +36,11 @@ The provider of the image (FR24, ADSBX, etc.) includes a dump1090 utility of som
 https://github.com/antirez/dump1090
 
 Other feeds include a .DEB package that will read ports 3000[123] to get that data and send it back to their service. These .DEBs are pretty smart and will figure out what's going on without too much effort on your part.
+
+## Beast Format
+
+Port `30003` is the BaseStation output port where recieved messages are sent in a CSV format. The message format is available at the link below.
+
+http://woodair.net/sbs/article/barebones42_socket_data.htm
+
+This seems like a good place to pull in aircraft info in your code.
